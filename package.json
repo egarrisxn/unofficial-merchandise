@@ -2,9 +2,10 @@
   "name": "unofficialmerchandise",
   "version": "1.0.0",
   "homepage": "https://unofficialmerchandise.vercel.app",
-  "description": "This is a complete ecommerce webstore utilizing Stripe, Sanity, Next.js, and more!",
+  "description": "A complete ecommerce webstore utilizing Stripe, Sanity, Next.js, and more!",
   "author": "Ethan G. (https://egxworld.net)",
   "license": "MIT",
+  "private": true,
   "keywords": [
     "sanity",
     "nextjs",
@@ -14,8 +15,8 @@
     "stripe",
     "vercel"
   ],
-  "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -48,16 +49,5 @@
     "prettier": "^3.3.1",
     "prettier-plugin-tailwindcss": "^0.6.2",
     "tailwindcss": "^3.4.4"
-  },
-  "prettier": {
-    "semi": false,
-    "tabWidth": 2,
-    "printWidth": 100,
-    "bracketSpacing": false,
-    "singleQuote": true,
-    "jsxSingleQuote": true,
-    "plugins": [
-      "prettier-plugin-tailwindcss"
-    ]
   }
 }

@@ -6,11 +6,8 @@ import {X} from 'lucide-react'
 import {cn} from '@/lib/utils'
 
 const Sheet = SheetPrimitive.Root
-
 const SheetTrigger = SheetPrimitive.Trigger
-
 const SheetClose = SheetPrimitive.Close
-
 const SheetPortal = SheetPrimitive.Portal
 
 const SheetOverlay = React.forwardRef(({className, ...props}, ref) => (

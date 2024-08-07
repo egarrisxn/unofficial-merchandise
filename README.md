@@ -1,104 +1,83 @@
 # **Unofficial Merchandise**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/unofficial-merchandise)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/unofficial-merchandise) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/unofficial-merchandise)
 
 ## Overview
 
-This is a complete ecommerce webstore utilizing Stripe, Sanity, Next.js, and more!
+"Unofficial Merchandise" is a feature-rich ecommerce webstore built to provide a seamless shopping experience. Leveraging modern web technologies like Stripe, Sanity, and Next.js, it offers a scalable, fast, and highly customizable platform for selling products online.
 
-![unofficialmerchandise](https://github.com/egarrisxn/unofficial-merchandise/assets/126130230/5e99b3bb-1584-4c2f-9143-7f00080ca185)
+![Unofficial Merchandise](https://github.com/egarrisxn/unofficial-merchandise/assets/126130230/5e99b3bb-1584-4c2f-9143-7f00080ca185)
+
+## **Features**
+
+- **Responsive Design:** Optimized for all screen sizes, from mobile to desktop.
+- **Customizable UI:** Built with Shadcn-UI and Tailwind CSS for a modern, consistent design.
+- **CMS Integration:** Managed content using Sanity, allowing easy updates to the store's content without touching the code.
+- **Secure Payments:** Integrated with Stripe for handling payments, ensuring a secure transaction process.
+- **Fast Performance:** Developed with Next.js for fast load times and a smooth user experience.
+- **Optimized Asset Management:** Efficient handling of media and product images to maintain performance and aesthetics.
 
 ## **Technologies**
 
-- Nextjs
-- Sanity
-- Shadcn-UI
-- TailwindCSS
-- Stripe
-- Vercel
+- **Next.js:** The React framework for production with server-side rendering and static site generation.
+- **Sanity:** A headless CMS for managing and delivering content.
+- **Shadcn-UI:** A component library for building accessible and customizable UI elements.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **Stripe:** A powerful API for managing online payments and transactions.
+- **pnpm:** Fast, disk space-efficient package manager.
 
-## **Package Manager**
+## **Getting Started**
 
-This project uses `pnpm` as the package manager for efficient dependency management. To install dependencies, run:
+To get started with the project, follow these steps:
 
-```
-pnpm install
-```
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/egarrisxn/unofficial-merchandise.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd unofficial-merchandise
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   pnpm install
+   ```
+
+4. **Set up environment variables:**
+
+   - Create a `.env.local` file in the root directory.
+   - Add necessary environment variables (e.g., Stripe API keys, Sanity project ID).
+
+5. **Run the development server:**
+
+   ```bash
+   pnpm dev
+   ```
+
+6. **Build for production:**
+
+   ```bash
+   pnpm build
+   ```
 
 ## **Deployment**
 
-The project is deployed on Vercel for seamless hosting and continuous deployment.
+Deploy the project on a hosting platform that supports Next.js, such as Vercel, Netlify, or any other cloud provider. Ensure you have set up your environment variables correctly on the hosting platform.
 
-### Prerequisites:
+## **Contributing**
 
-**Vercel Account**: Make sure you have an account on Vercel. You can sign up using your GitHub, GitLab, or Bitbucket account.<br/>
-**Next.js Project**: Ensure your Next.js project is ready for deployment. Make sure it runs locally without errors.
+Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request.
 
-### Deployment Steps:
-
-1. Install Vercel CLI (if not already installed):
-  If you haven't already installed the Vercel CLI, you can do so using npm:
-
-```
-pnpm install -g vercel
-```
-
-
-
-2. Log in to Vercel CLI:
-  Once installed, log in to your Vercel account through the CLI:
-
-```
-vercel login
-```
-Follow the prompts to authenticate with your Vercel account.
-
-
-
-3. Deploy Your Next.js Project:
-  Navigate to your Next.js project directory in the terminal. Then, deploy your project using the vercel command:
-
-```
-vercel
-```
-This command will initiate the deployment process. Vercel will guide you through a series of prompts:
-
-- It will ask you to confirm the project directory. Press Enter to confirm if it detects a Next.js project correctly.
-- It will ask for the scope (personal account or team account). Choose appropriately.
-- It will ask for the project name. You can choose a new name or press Enter to use the default.
-- It will ask whether you want to deploy this project. Confirm by typing Y.
-
-
-
-4. Configure Environment Variables (if necessary):
-  If your project requires environment variables (e.g., API keys, credentials), you can set them directly in the Vercel dashboard after deployment:
-
-- Go to your project on the Vercel dashboard.
-- Navigate to Settings > Environment Variables.
-- Add your environment variables there.
-
-
-
-5. Automatic Deployments (optional):
-  Vercel supports automatic deployments triggered by pushes to your Git repository. To set this up:
-
-- Go to your project's Settings in Vercel.
-- Navigate to Git Integration.
-- Connect your Git repository (GitHub, GitLab, Bitbucket).
-- Configure the branch from which you want to deploy.
-- Enable automatic deployments if desired.
-
-
-
-6. View Your Deployed Site:
-  Once deployment is complete, Vercel will provide you with a URL where your site is hosted. You can access your deployed site using this URL.
-
-
-
-7. Further Customization:
-  Explore Vercel's dashboard for more options like domain management, SSL configuration, and more to tailor your deployment setup according to your project's needs.
-
-
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add a new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
 ## **License**
 
@@ -106,4 +85,7 @@ This project is licensed under the [MIT license](https://opensource.org/licenses
 
 ## **Questions**
 
-Feel free to reach out to me via [GitHub](https://github.com/EGARRISXN), or email at egarrisxn@gmail.com.
+If you have any questions or need further assistance, feel free to reach out:
+
+- **GitHub:** [EGARRISXN](https://github.com/EGARRISXN)
+- **Email:** [egarrisxn@gmail.com](mailto:egarrisxn@gmail.com)

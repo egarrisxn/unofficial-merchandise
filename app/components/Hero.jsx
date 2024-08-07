@@ -11,7 +11,7 @@ export default function Hero() {
             <span className='font-black text-white'>Live For The Merchandise.</span>
           </h1>
           <p className='max-w-md text-gray-600 sm:leading-relaxed xl:text-lg'>
-            For educational purposes only. If you'd like to purchase any of these items, please go
+            For educational purposes only. If you&apos;d like to purchase any of these items, please go
             to https://sway-bae-shop.fourthwall.com/
           </p>
         </div>
