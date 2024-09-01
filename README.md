@@ -4,7 +4,7 @@
 
 ## Overview
 
-"Unofficial Merchandise" is a feature-rich ecommerce webstore built to provide a seamless shopping experience. Leveraging modern web technologies like Stripe, Sanity, and Next.js, it offers a scalable, fast, and highly customizable platform for selling products online.
+"Unofficial Merchandise" is a feature-rich e-commerce store built to provide a seamless shopping experience. Leveraging modern web technologies like Stripe, Sanity, and Next.js, it offers a scalable, fast, and highly customizable platform for selling products online.
 
 ![Unofficial Merchandise](https://github.com/egarrisxn/unofficial-merchandise/assets/126130230/5e99b3bb-1584-4c2f-9143-7f00080ca185)
 
