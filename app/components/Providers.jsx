@@ -3,7 +3,16 @@ import * as React from 'react'
 import {CartProvider as USCProvider} from 'use-shopping-cart'
 
 const key = process.env.NEXT_PUBLIC_STRIPE_KEY
-const url = process.env.NEXT_PUBLIC_STRIPE_URL
+
+const isProduction = process.env.NODE_ENV === 'production'
+
+const successUrl = isProduction
+  ? 'https://unoficialmerchandise.vercel.app/stripe/success'
+  : 'http://localhost:3000/stripe/success'
+
+const cancelUrl = isProduction
+  ? 'https://unoficialmerchandise.vercel.app/stripe/error'
+  : 'http://localhost:3000/stripe/error'
 
 export default function CartProvider({children}) {
   return (
@@ -11,8 +20,8 @@ export default function CartProvider({children}) {
       mode='payment'
       cartMode='client-only'
       stripe={key}
-      successUrl={`${url}/stripe/sucess`}
-      cancelUrl={`${url}/stripe/error`}
+      successUrl={successUrl}
+      cancelUrl={cancelUrl}
       currency='USD'
       billingAddressCollection={false}
       shouldPersist={true}
