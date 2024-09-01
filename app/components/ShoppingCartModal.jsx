@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
-import {Button} from '@/components/ui/button'
 import {Sheet, SheetContent, SheetHeader, SheetTitle} from '@/components/ui/sheet'
+import {Button} from '@/components/ui/button'
 import {useShoppingCart} from 'use-shopping-cart'
 
 export default function ShoppingCartModal() {

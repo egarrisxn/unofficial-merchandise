@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "homepage": "https://unofficialmerchandise.vercel.app",
   "description": "A complete ecommerce webstore utilizing Stripe, Sanity, Next.js, and more!",
-  "author": "Ethan G. (https://egxworld.net)",
   "license": "MIT",
   "private": true,
   "keywords": [

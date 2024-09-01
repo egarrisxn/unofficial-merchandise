@@ -1,15 +1,11 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import {Inter} from 'next/font/google'
 import CartProvider from './components/Providers'
 import MyNavbar from './components/MyNavbar'
 import ShoppingCartModal from './components/ShoppingCartModal'
 import MyFooter from './components/MyFooter'
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
+const inter = Inter({subsets: ['latin']})
 
 export const metadata = {
   metadataBase: new URL('https://unofficialmerchandise.vercel.app'),
@@ -40,8 +36,8 @@ export const metadata = {
 
 export default function RootLayout({children}) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body>
+    <html lang='en'>
+      <body className={inter.className}>
         <CartProvider>
           <MyNavbar />
           <ShoppingCartModal />

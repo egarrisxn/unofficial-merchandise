@@ -1,8 +1,7 @@
 'use client'
 import {Button} from '@/components/ui/button'
-import {urlFor} from '../lib/sanity'
-import {ProductCart} from './AddToBag'
 import {useShoppingCart} from 'use-shopping-cart'
+import {urlFor} from '../lib/sanity'
 
 export default function CheckoutNow({currency, description, image, name, price, price_id}) {
   const {checkoutSingleItem} = useShoppingCart()
