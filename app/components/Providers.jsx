@@ -7,11 +7,11 @@ const key = process.env.NEXT_PUBLIC_STRIPE_KEY
 const isProduction = process.env.NODE_ENV === 'production'
 
 const successUrl = isProduction
-  ? 'https://unoficialmerchandise.vercel.app/stripe/success'
+  ? 'https://unofficialmerchandise.vercel.app/stripe/success'
   : 'http://localhost:3000/stripe/success'
 
 const cancelUrl = isProduction
-  ? 'https://unoficialmerchandise.vercel.app/stripe/error'
+  ? 'https://unofficialmerchandise.vercel.app/stripe/error'
   : 'http://localhost:3000/stripe/error'
 
 export default function CartProvider({children}) {
