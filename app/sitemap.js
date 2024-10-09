@@ -1,16 +1,37 @@
-export default function sitemap() {
-  return [
+import {sitemapData} from './lib/data'
+
+export default async function sitemap() {
+  const products = await sitemapData()
+
+  const baseUrl = 'https://unofficialmerchandise.vercel.app'
+
+  const staticRoutes = [
     {
-      url: 'https://unofficialmerchandise.vercel.app',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
+      url: `${baseUrl}/`,
+      lastModified: new Date().toISOString(),
     },
     {
-      url: 'https://unofficialmerchandise.vercel.app/All',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
+      url: `${baseUrl}/Shirts`,
+      lastModified: new Date().toISOString(),
+    },
+    {
+      url: `${baseUrl}/Outerwear`,
+      lastModified: new Date().toISOString(),
+    },
+    {
+      url: `${baseUrl}/Accessories`,
+      lastModified: new Date().toISOString(),
+    },
+    {
+      url: `${baseUrl}/All`,
+      lastModified: new Date().toISOString(),
     },
   ]
+
+  const productRoutes = products.map((product) => ({
+    url: `${baseUrl}/product/${product.slug}`,
+    lastModified: product._updatedAt,
+  }))
+
+  return [...staticRoutes, ...productRoutes]
 }
