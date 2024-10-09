@@ -10,7 +10,7 @@ const inter = Inter({subsets: ['latin']})
 export const metadata = {
   metadataBase: new URL('https://unofficialmerchandise.vercel.app'),
   title: 'Unofficial Merchandise',
-  description: 'The unofficial merchs tore for Unofficial Merchandise.',
+  description: 'The unofficial ecommerce webstore for Unofficial Merchandise.',
   referrer: 'origin-when-cross-origin',
   keywords: ['sanity', 'next', 'react', 'tailwindcss', 'cms', 'ecommerce', 'egarrisxn'],
   robots: {
@@ -28,10 +28,43 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     title: 'Unofficial Merchandise',
-    description: 'The unofficial merch store for Unofficial Merchandise.',
+    description: 'The unofficial ecommerce webstore for Unofficial Merchandise.',
     url: 'https://unofficialmerchandise.vercel.app',
     siteName: 'Unofficial Merchandise',
+    images: [
+      {
+        url: `https://unofficialmerchandise.vercel.app/opengraph-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'The unofficial ecommerce webstore for Unofficial Merchandise.',
+      },
+    ],
   },
+  twitter: {
+    cardType: 'summary_large_image',
+    creator: 'eg__xo',
+    site: 'https://twitter.com/eg_xo_',
+    title: 'EG. | Blog',
+    description: 'SPEND A LITTLE TIME INSIDE MY HEAD.',
+    images: [
+      {
+        url: `https://unofficialmerchandise.vercel.app/twitter-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'The unofficial ecommerce webstore for Unofficial Merchandise.',
+      },
+    ],
+  },
+  icons: {
+    shortcut: 'https://unofficialmerchandise.vercel.app/favicon.ico',
+  },
+}
+
+export const viewport = {
+  themeColor: [
+    {media: '(prefers-color-scheme: light)', color: 'cyan'},
+    {media: '(prefers-color-scheme: dark)', color: 'black'},
+  ],
 }
 
 export default function RootLayout({children}) {
