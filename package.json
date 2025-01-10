@@ -1,0 +1,52 @@
+{
+  "name": "unofficialmerchandise",
+  "version": "1.0.0",
+  "homepage": "https://unofficialmerchandise.vercel.app",
+  "description": "A complete ecommerce webstore utilizing Stripe, Sanity, Next.js, and more!",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "sanity",
+    "nextjs",
+    "react",
+    "shadcnui",
+    "tailwindcss",
+    "stripe",
+    "vercel"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@sanity/image-url": "^1.0.2",
+    "@stripe/stripe-js": "^3.5.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.390.0",
+    "next": "14.2.3",
+    "next-sanity": "^9.3.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "stripe": "^15.10.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "use-shopping-cart": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.3.1",
+    "prettier-plugin-tailwindcss": "^0.6.2",
+    "tailwindcss": "^3.4.4"
+  }
+}
