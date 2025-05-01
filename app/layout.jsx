@@ -1,9 +1,9 @@
-import './globals.css'
 import {Inter} from 'next/font/google'
 import CartProvider from './components/Providers'
 import MyNavbar from './components/MyNavbar'
 import ShoppingCartModal from './components/ShoppingCartModal'
 import MyFooter from './components/MyFooter'
+import './globals.css'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -14,33 +14,11 @@ export const metadata = {
   referrer: 'origin-when-cross-origin',
   creator: 'https://egxo.dev.',
   keywords: ['sanity', 'next', 'react', 'tailwindcss', 'cms', 'ecommerce', 'egarrisxn'],
-  robots: {
-    index: true,
-    follow: false,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  manifest: '/manifest.json',
   openGraph: {
     title: 'Unofficial Merchandise',
     description: 'The unofficial ecommerce webstore for Unofficial Merchandise.',
     url: 'https://unofficialmerchandise.vercel.app',
     siteName: 'Unofficial Merchandise',
-    images: [
-      {
-        url: '/opengraph-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'The unofficial ecommerce webstore for Unofficial Merchandise.',
-      },
-    ],
     type: 'website',
     locale: 'en_US',
   },
@@ -50,14 +28,6 @@ export const metadata = {
     description: 'The unofficial ecommerce webstore for Unofficial Merchandise.',
     creator: '@eg__xo',
     site: '@eg__xo',
-    images: [
-      {
-        url: '/twitter-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'The unofficial ecommerce webstore for Unofficial Merchandise.',
-      },
-    ],
   },
   icons: {
     icon: [
@@ -82,11 +52,11 @@ export const viewport = {
 export default function RootLayout({children}) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${inter.className} flex min-h-[100dvh] flex-col font-sans antialiased`}>
         <CartProvider>
           <MyNavbar />
           <ShoppingCartModal />
-          <main>{children}</main>
+          <main className='flex-grow'>{children}</main>
           <MyFooter />
         </CartProvider>
       </body>

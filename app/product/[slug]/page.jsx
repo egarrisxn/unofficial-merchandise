@@ -40,7 +40,7 @@ export default async function ProductPge({params}) {
             </div>
 
             <div className='mb-6 flex items-center gap-3 md:mb-10'>
-              <Button className='gap-x-2 rounded-3xl bg-primary/70'>
+              <Button className='bg-primary/70 gap-x-2 rounded-3xl'>
                 <span className='text-sm'>4.8</span>
                 <Star className='size-4' />
               </Button>
@@ -50,7 +50,7 @@ export default async function ProductPge({params}) {
             <div className='mb-4'>
               <div className='flex items-end gap-2'>
                 <span className='text-xl font-bold text-gray-300 md:text-2xl'>${data.price}</span>
-                <span className='mb-0.5 text-primary line-through'>${data.price + 10.01}</span>
+                <span className='text-primary mb-0.5 line-through'>${data.price + 10.01}</span>
               </div>
 
               <span className='text-sm text-gray-300'>shipping at checkout</span>

@@ -27,7 +27,7 @@ export default async function Newest() {
         <div className='flex items-center justify-between'>
           <h2 className='text-2xl font-bold tracking-tight text-gray-300'>New Products</h2>
 
-          <Link className='flex items-center gap-x-1 text-primary' href='/All'>
+          <Link className='text-primary flex items-center gap-x-1' href='/All'>
             See All{' '}
             <span>
               <ArrowRight />

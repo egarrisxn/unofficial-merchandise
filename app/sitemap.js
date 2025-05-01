@@ -2,7 +2,6 @@ import {sitemapData} from './lib/data'
 
 export default async function sitemap() {
   const products = await sitemapData()
-
   const baseUrl = 'https://unofficialmerchandise.vercel.app'
 
   const staticRoutes = [

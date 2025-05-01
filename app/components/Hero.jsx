@@ -5,19 +5,19 @@ export default function Hero() {
   return (
     <section className='mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8'>
       <div className='mb-8 flex flex-wrap justify-between md:mb-16'>
-        <div className='mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48'>
+        <div className='mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pt-48 lg:pb-24'>
           <h1 className='mb-4 text-4xl font-bold sm:text-4xl md:mb-8 md:text-5xl'>
             Stay Unofficial.{' '}
             <span className='font-black text-white'>Live For The Merchandise.</span>
           </h1>
           <p className='max-w-md text-gray-600 sm:leading-relaxed xl:text-lg'>
-            For educational purposes only. If you&apos;d like to purchase any of these items, please go
-            to https://sway-bae-shop.fourthwall.com/
+            For educational purposes only. If you&apos;d like to purchase any of these items, please
+            go to https://sway-bae-shop.fourthwall.com/
           </p>
         </div>
 
         <div className='mb-12 flex w-full pt-4 sm:pt-0 md:mb-16 lg:w-2/3'>
-          <div className='relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg border bg-gray-100 shadow-sm shadow-gray-100 md:left-16 md:top-16 lg:ml-0'>
+          <div className='relative top-12 left-12 z-10 -ml-12 overflow-hidden rounded-lg border bg-gray-100 shadow-sm shadow-gray-100 md:top-16 md:left-16 lg:ml-0'>
             <Image
               src='/hero-image-1.webp'
               alt='Hero 1'

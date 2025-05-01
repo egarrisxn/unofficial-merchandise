@@ -38,7 +38,7 @@ export default function ImageGallery({images}) {
           className='h-full w-full object-cover object-center'
         />
 
-        <span className='absolute left-0 top-0 rounded-br-lg bg-primary px-3 py-1.5 text-sm uppercase tracking-wider text-white'>
+        <span className='bg-primary absolute top-0 left-0 rounded-br-lg px-3 py-1.5 text-sm tracking-wider text-white uppercase'>
           Sale
         </span>
       </div>

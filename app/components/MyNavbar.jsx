@@ -33,13 +33,13 @@ export default function MyNavbar() {
             {links.map((link, idx) => (
               <div key={idx}>
                 {pathname === link.href ? (
-                  <Link className='text-lg font-semibold text-primary' href={link.href}>
+                  <Link className='text-primary text-lg font-semibold' href={link.href}>
                     {link.name}
                   </Link>
                 ) : (
                   <Link
                     href={link.href}
-                    className='text-lg font-semibold text-gray-400 transition duration-100 hover:text-primary'
+                    className='hover:text-primary text-lg font-semibold text-gray-400 transition duration-100'
                   >
                     {link.name}
                   </Link>
@@ -47,7 +47,7 @@ export default function MyNavbar() {
               </div>
             ))}
           </nav>
-          <div className='flex divide-x md:border-l md:border-r'>
+          <div className='flex divide-x md:border-r md:border-l'>
             <Button
               variant={'outline'}
               onClick={() => handleCartClick()}
