@@ -1,12 +1,12 @@
 # **Unofficial Merchandise**
 
+![unofficialmerchandise](https://github.com/user-attachments/assets/263c74be-0cbb-4957-8479-a542d363791b)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/unofficial-merchandise) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/unofficial-merchandise)
 
 ## Overview
 
 "Unofficial Merchandise" is a feature-rich e-commerce store built to provide a seamless shopping experience. Leveraging modern web technologies like Stripe, Sanity, and Next.js, it offers a scalable, fast, and highly customizable platform for selling products online.
-
-![Unofficial Merchandise](https://github.com/egarrisxn/unofficial-merchandise/assets/126130230/5e99b3bb-1584-4c2f-9143-7f00080ca185)
 
 ## **Features**
 
