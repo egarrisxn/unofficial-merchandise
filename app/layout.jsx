@@ -52,6 +52,7 @@ export const viewport = {
 export default function RootLayout({children}) {
   return (
     <html lang='en'>
+          <meta name="apple-mobile-web-app-title" content='Unofficial Merchandise' />
       <body className={`${inter.className} flex min-h-[100dvh] flex-col font-sans antialiased`}>
         <CartProvider>
           <MyNavbar />
