@@ -1,0 +1,35 @@
+{
+  "name": "Unofficial Merchandise",
+  "short_name": "UM",
+  "description": "The unofficial merchs tore for Unofficial Merchandise.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#040f2a",
+  "background_color": "#040f2a",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+        {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-mask.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}
